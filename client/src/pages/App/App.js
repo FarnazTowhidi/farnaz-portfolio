@@ -1,5 +1,5 @@
 
-import './App.css';
+
 //react toolkit
 import { Routes, Route} from "react-router-dom";
 //pages
@@ -8,6 +8,9 @@ import ResumePage from '../ResumePage/ResumePage';
 import NavBar from '../../components/NavBar/NavBar';
 //Stlyesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import '../../scss/custom.scss';
+
 
 function App() {
   return (
