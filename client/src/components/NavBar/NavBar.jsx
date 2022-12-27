@@ -16,6 +16,7 @@ export default function NavBar() {
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}         
           >
+            <Nav.Link href="home">Home</Nav.Link>
             <Nav.Link href="about">About</Nav.Link>
             <Nav.Link href="portfolio">Portoflio</Nav.Link>
             <Nav.Link href="contact" disabled>Contact</Nav.Link>

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
+  color:#aeaeae;
+ text-align: right;
 }
 
 code {
@@ -13,3 +20,78 @@ code {
     monospace;
 }
 
+h3 {
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  /* https://www.toptal.com/designers/htmlarrows/symbols/ */
+  list-style: none;
+  content: "☵";
+  color:#eb5c29;
+  margin:1px;
+}
+
+.card-title {
+  color:#eb5c29;
+  font-family: 'Poiret One', cursive;
+  font-size: 22px;
+  text-decoration: NONE;;
+}
+
+.card-footer {
+  text-decoration: NONE;
+  font-size: 10px;
+}
+
+.card-tech {
+  font-family: 'PT Sans', sans-serif;
+  font-size:12px;
+  color:#aeaeae
+}
+
+.card-desc {
+  font-size:12px;
+ min-height: 70px;
+
+}
+
+.card-img {
+  height:100%;
+}
+
+.txt_header {
+  font-family: 'Anek Bangla', sans-serif;
+  font-size: 40px;
+  color:#efefef
+}
+
+ .font_IBM {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 40px;
+ }
+
+ .font_Tajawal {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 40px;
+}
+
+ .White {
+  color:#ffffff
+ }
+
+ .Orange {
+  color:#ef7c02;
+ }
+
+ .size_30 {
+  font-size: 30px;
+ }
+
+ .height_30 {
+  height: 30px;
+ }

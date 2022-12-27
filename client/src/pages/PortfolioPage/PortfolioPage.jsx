@@ -4,57 +4,68 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
+//Data
+import {portfolios} from "../../data.js"
+
 
 export default function PortfolioPage() {
-  const portfolios = [ 
-                      {title:"ChatterBox",
-                       image: "aa.jpg",
-                       description: "A MERN-stack instant messaging single page application (SPA), leveraging Socket.io to facilitate real-time communication between browsers. As a pseudo-social media application, I integrated AWS S3 for users to upload photos and coded functionality to edit their profile’s details. ",
-                       sourceCode: "https://github.com/tungolra/Chatterbox-mern-app",
-                       deploy: "https://chatterbox-sei-55.herokuapp.com/",
-                       technology: "MVC architecture, express backend, AWS S3, Socket.io, HTML, CSS, React, MaterialUI" },
-                       
-                       {title:"Arash Habibi Lashkari",
-                       image: "aa.jpg",
-                       description: " lj l jl j lk j",
-                       sourceCode: "",
-                       deploy: "http://http://ahlashkari.com/",
-                       technology: "Html, CSS" },
-                       
-                       {title:"Arash Habibi Lashkari",
-                       image: "aa.jpg",
-                       description: " lj l jl j lk j",
-                       sourceCode: "",
-                       deploy: "http://http://ahlashkari.com/",
-                       technology: "Html, CSS" }
-                      ]
+  
 
   useEffect(() => {
     document.title = '{ } Portfolio Farnaz Towhidi';
   }, []);
+
+  function HandleMouseOut (e, value) {
+    alert (e)
+  }
   
   return (
-    <div class="container">
-      <div class="row">
+   
+    <Container>
+      <Row>
+        <Col className="txt_header">SOME THING I HAVE BUILT</Col>
+      </Row>
+      <Row>
         {portfolios.map((portfolio, idx)=>(
-          <Col xl={4} lg={4} md={4} s={4} >
-             <Card bg="custom-color" text="white" key="portofliocard{idx}" >
-             <Card.Img src={portfolio.image} style={{borderRadius:0}} />
-              <Card.Body >
-                  <Card.Title >{portfolio.title}</Card.Title>
-                  <Card.Text border="gray-dark">
-                  {portfolio.description}                               
-                  </Card.Text>
-                  <Link href={portfolio.deploy}>Git Hub</Link>
-                  <Link href={portfolio.deploy}>Deploy</Link>  
-              </Card.Body>           
+       
+          <Col style={{maxHeight:"400px;"}} >
+             <Card bg="card-bg" text="card-desc" key="portofliocard{idx}" style={{ borderRadius:0,height:"100%"}} >
+           
+                <a target="_black" href={portfolio.url}>
+                  <Card.Img 
+                    src={portfolio.image} 
+                    className="card-img d-flex flex-column justify-content-center" 
+                    style={{borderRadius:0,maxHeight:"300px"}}
+                   
+                    //  onMouseOut = {(e)=>HandleMouseOut(e, {portfolio.image})}
+
+                   
+                    />             
+                </a>
+                 
+                <Card.Body style={{borderRadius:"0", height:"200px"}}>
+                    <Card.Title className="card-title">{portfolio.title}</Card.Title>
+                    <Card.Text className="card-desc" border="gray-dark">
+                    {portfolio.description}                               
+                    </Card.Text>
+                    <Card.Text className="card-tech" border="gray-dark">
+                    {portfolio.technology}                               
+                    </Card.Text>
+                    {/* {
+                      if (portfolio.sourceCode) {
+                        <Link className="card-footer" href={portfolio.sourceCode}>Github </Link>
+                      }
+                      
+                    } */}
+                     
+                    
+                    <Link className="card-footer" href={portfolio.deploy}>Deploy </Link>  
+                </Card.Body>       
             </Card>       
           </Col>
         ) )
         }
-        
-       
-      </div>
-    </div>
+      </Row>    
+    </Container>
   )
 }
