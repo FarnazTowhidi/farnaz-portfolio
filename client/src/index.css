@@ -11,8 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color:#aeaeae;
- text-align: right;
+  color:#e6e6e6;
+
 }
 
 code {
@@ -21,7 +21,9 @@ code {
 }
 
 h3 {
+
   font-size: 15px;
+  font-weight: bold;
 }
 
 ul {
@@ -34,6 +36,11 @@ ul li::before {
   content: "☵";
   color:#eb5c29;
   margin:1px;
+}
+
+Row {
+  margin: auto;
+
 }
 
 .card-title {
@@ -78,6 +85,8 @@ ul li::before {
  .font_Tajawal {
   font-family: 'Tajawal', sans-serif;
   font-size: 40px;
+  color:#ffffff;
+  text-align: center;
 }
 
  .White {
@@ -85,7 +94,7 @@ ul li::before {
  }
 
  .Orange {
-  color:#ef7c02;
+  color:#eb5c29;
  }
 
  .size_30 {
@@ -93,5 +102,27 @@ ul li::before {
  }
 
  .height_30 {
-  height: 30px;
+  height: 300px;
+ }
+
+ .idx_sections_header {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 40px;
+  color:#ffffff;
+  text-align: center;
+  background-color: #ef7c02;
+  align-items: center;
+  padding:30px 0px 30px 0px;
+  margin:30px 0px 30px 0px;
+ }
+
+ .idx_sections_subheader {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 20px;
+  color:#ffffff;
+  text-align: center;
+  max-height: 100%;
+  line-height: 20px;;
  }
