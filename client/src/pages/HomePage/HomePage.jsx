@@ -40,12 +40,11 @@ export default function HomePage() {
       </Carousel.Item>
       </Carousel> */}
       
-     
       <section id="overview">
         <Row>
-          <Col className='font_Tajawal'>FARNAZ TOWHIDI</Col>
+          <Col className='font-Tajawal'>FARNAZ TOWHIDI</Col>
         </Row>
-        <Row lg={12} style={{display:"flex", }}>
+        <Row lg={12}>
           <Col lg={5} style={{writingMode: "vertical-rl"}}><span>FRONTEND DEVELOPER</span></Col>    
           <Col lg={2} style={{textAlign:"center"}} >
             <img src="../../images/FarnazTowhidi.jpg" />
@@ -53,17 +52,16 @@ export default function HomePage() {
           <Col lg={5}><span style={{writingMode:"vertical-rl", }}>FRONTEND DEVELOPER</span></Col>            
         </Row>
         <Row>
-          <Col className='font_Tajawal'>FARNAZ TOWHIDI</Col>
+          <Col className='font-Tajawal' style={{padding:0, margin:0}}>FRONTEND DEVELOPER</Col>
         </Row>
       </section>
 
       <section id="experience">
         <Row>
-          <Col className='idx_sections_header' >EXPERIENCES</Col>
-        </Row>
-        
-        <Row lg={12} className="justify-content-md-center">
-          <Col lg={4} className="idx_sections_subheader" >IBM <br />FREDERICTON</Col>     
+          <Col className='index-header' >EXPERIENCES</Col>
+        </Row>        
+        <Row lg={12}>
+          <Col lg={4} className="idx-subheader" >IBM <br />FREDERICTON</Col>     
           <Col lg={8}> 
                 <ul>
                   <li>@Quality Assurance, 2020</li>
@@ -74,8 +72,8 @@ export default function HomePage() {
                 </ul>           
           </Col>
         </Row>
-        <Row lg={12} className="justify-content-md-center">
-          <Col lg={4} className="idx_sections_subheader">CIC <br />CANADA</Col>     
+        <Row lg={12}>
+          <Col lg={4} className="idx-subheader">CIC <br />CANADA</Col>     
           <Col lg={8}> 
                 <ul>
                   <li>@Frontend Developer (contract), 2019</li>
@@ -84,8 +82,8 @@ export default function HomePage() {
                 </ul>           
           </Col>
         </Row>
-        <Row lg={12} className="justify-content-md-center">
-          <Col lg={4} className="idx_sections_subheader">BIOSSENTIALS <br /> MALAYSIA</Col>     
+        <Row lg={12}>
+          <Col lg={4} className="idx-subheader">BIOSSENTIALS <br /> MALAYSIA</Col>     
           <Col lg={8}> 
                 <ul>
                   <li>@Frontend Developer (contract), 2019</li>
@@ -99,7 +97,7 @@ export default function HomePage() {
       
       <section id="education">
         <Row>
-          <Col className='idx_sections_header'>EDUCATION</Col>
+          <Col className='index-header'>EDUCATION</Col>
         </Row>
         <Row lg={12} className="justify-content-md-center">
           <Col lg={4} className="idx_sections_subheader"></Col>     

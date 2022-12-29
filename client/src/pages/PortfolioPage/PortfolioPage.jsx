@@ -12,18 +12,17 @@ export default function PortfolioPage() {
   
 
   useEffect(() => {
-    document.title = '{ } Portfolio Farnaz Towhidi';
+    document.title = '{ } Farnaz Towhidi Portfolio';
   }, []);
 
   function HandleMouseOut (e, value) {
     alert (e)
   }
   
-  return (
-   
-    <Container>
+  return ( 
+    <Container>    
       <Row>
-        <Col className="txt_header">SOME THING I HAVE BUILT</Col>
+        <Col className="txt-header">SOME THING I HAVE BUILT</Col>
       </Row>
       <Row>
         {portfolios.map((portfolio, idx)=>(
@@ -35,11 +34,8 @@ export default function PortfolioPage() {
                   <Card.Img 
                     src={portfolio.image} 
                     className="card-img d-flex flex-column justify-content-center" 
-                    style={{borderRadius:0,maxHeight:"300px"}}
-                   
-                    //  onMouseOut = {(e)=>HandleMouseOut(e, {portfolio.image})}
-
-                   
+                    style={{borderRadius:0,maxHeight:"300px"}}                 
+                   //  onMouseOut = {(e)=>HandleMouseOut(e, {portfolio.image})}
                     />             
                 </a>
                  

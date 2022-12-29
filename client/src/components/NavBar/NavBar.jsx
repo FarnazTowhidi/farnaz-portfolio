@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function NavBar() {
   return (
+    
     <Navbar bg="dark" variant="dark">
       <Container fluid>
         <Navbar.Brand href="#">Farnaz Towhidi</Navbar.Brand>

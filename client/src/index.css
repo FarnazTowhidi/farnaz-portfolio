@@ -12,6 +12,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color:#e6e6e6;
+  
+    will-change: transform;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 
 }
 
@@ -71,18 +74,18 @@ Row {
   height:100%;
 }
 
-.txt_header {
+.txt-header {
   font-family: 'Anek Bangla', sans-serif;
   font-size: 40px;
   color:#efefef
 }
 
- .font_IBM {
+ .font-IBM {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 40px;
  }
 
- .font_Tajawal {
+ .font-Tajawal {
   font-family: 'Tajawal', sans-serif;
   font-size: 40px;
   color:#ffffff;
@@ -105,7 +108,7 @@ Row {
   height: 300px;
  }
 
- .idx_sections_header {
+ .index-header {
   font-family: 'Tajawal', sans-serif;
   font-size: 40px;
   color:#ffffff;
@@ -113,10 +116,10 @@ Row {
   background-color: #ef7c02;
   align-items: center;
   padding:30px 0px 30px 0px;
-  margin:30px 0px 30px 0px;
+  margin:0px 0px 30px 0px;
  }
 
- .idx_sections_subheader {
+ .idx-subheader {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-family: 'Tajawal', sans-serif;
