@@ -41,16 +41,29 @@ ul li::before {
   margin:1px;
 }
 
+.ul-skills li::before {
+  /* https://www.toptal.com/designers/htmlarrows/symbols/ */
+  list-style: none;
+  content: "☑";
+  color:#eb5c29;
+  margin:1px;
+}
+
 Row {
   margin: auto;
 
 }
 
+.color-gray {
+  color:rgb(104, 104, 104);
+}
+
 .card-title {
   color:#eb5c29;
   font-family: 'Poiret One', cursive;
-  font-size: 22px;
-  text-decoration: NONE;;
+  font-size: 20px;
+  text-decoration: NONE;
+  text-align: center;
 }
 
 .card-footer {
@@ -60,12 +73,12 @@ Row {
 
 .card-tech {
   font-family: 'PT Sans', sans-serif;
-  font-size:12px;
+  font-size:14px;
   color:#aeaeae
 }
 
 .card-desc {
-  font-size:12px;
+  font-size:14px;
  min-height: 70px;
 
 }
@@ -74,10 +87,12 @@ Row {
   height:100%;
 }
 
-.txt-header {
+.portfolio-header {
   font-family: 'Anek Bangla', sans-serif;
   font-size: 40px;
-  color:#efefef
+  color:#efefef;
+  text-align: center;
+  padding:30px 0px 30px 0px
 }
 
  .font-IBM {
@@ -87,7 +102,8 @@ Row {
 
  .font-Tajawal {
   font-family: 'Tajawal', sans-serif;
-  font-size: 40px;
+  font-size: 37px;
+  line-height: 33px;
   color:#ffffff;
   text-align: center;
 }
@@ -111,11 +127,11 @@ Row {
  .index-header {
   font-family: 'Tajawal', sans-serif;
   font-size: 40px;
-  color:#ffffff;
+  color:#ef7c02;
   text-align: center;
-  background-color: #ef7c02;
+
   align-items: center;
-  padding:30px 0px 30px 0px;
+  padding:0px 0px 0px 0px;
   margin:0px 0px 30px 0px;
  }
 
@@ -129,3 +145,30 @@ Row {
   max-height: 100%;
   line-height: 20px;;
  }
+
+ .idx-subheader-horiz {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 20px;
+  color:#ffffff;
+  text-align: center;
+  max-height: 100%;
+  line-height: 20px;
+  align-self: center;
+ }
+
+ .NavBar_icons {
+  transition: all 1s ease-in-out;
+  margin: auto;
+  width:40px;
+ }
+
+ .NavBar_icons:hover {
+  transform: rotate(20deg);
+ }
+
+ #rectangle {
+  width: 30%;
+  height: 100px;
+  border:1px solid #ef8c22;
+  margin: 10px;
+}

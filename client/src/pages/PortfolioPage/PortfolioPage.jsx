@@ -22,40 +22,40 @@ export default function PortfolioPage() {
   return ( 
     <Container>    
       <Row>
-        <Col className="txt-header">SOME THING I HAVE BUILT</Col>
+        <Col className="portfolio-header">SOME THING I HAVE BUILT</Col>
       </Row>
       <Row>
         {portfolios.map((portfolio, idx)=>(
        
-          <Col style={{maxHeight:"400px;"}} >
-             <Card bg="card-bg" text="card-desc" key="portofliocard{idx}" style={{ borderRadius:0,height:"100%"}} >
+          <Col style={{maxHeight:"100%",}} >
+             <Card bg="card-bg" text="card-desc" key="portofliocard{idx}" style={{ borderRadius:0,}} >
            
                 <a target="_black" href={portfolio.url}>
                   <Card.Img 
                     src={portfolio.image} 
                     className="card-img d-flex flex-column justify-content-center" 
-                    style={{borderRadius:0,maxHeight:"300px"}}                 
+                    style={{borderRadius:0,}}                 
                    //  onMouseOut = {(e)=>HandleMouseOut(e, {portfolio.image})}
                     />             
                 </a>
                  
-                <Card.Body style={{borderRadius:"0", height:"200px"}}>
+                <Card.Body style={{borderRadius:"0", }}>
                     <Card.Title className="card-title">{portfolio.title}</Card.Title>
-                    <Card.Text className="card-desc" border="gray-dark">
-                    {portfolio.description}                               
+                    <Card.Text className="card-desc" border="gray-dark" style={{ borderRadius:"0", height:"50px"}}>
+                      {portfolio.description}                               
                     </Card.Text>
-                    <Card.Text className="card-tech" border="gray-dark">
-                    {portfolio.technology}                               
+                    <Card.Text className="card-tech" border="gray-dark" style={{height:"50px"}}>
+                      {portfolio.technology} 
                     </Card.Text>
-                    {/* {
-                      if (portfolio.sourceCode) {
-                        <Link className="card-footer" href={portfolio.sourceCode}>Github </Link>
+                    <Card.Text className="card-tech" border="gray-dark" style={{height:"30px"}}>                
+                      {
+                      (portfolio.sourceCode!="") 
+                        ? <><a target="_blank" href={portfolio.sourceCode} >Github</a><a target="_blank" href={portfolio.deploy} > Deploy</a></>
+                        : <a href={portfolio.url} >Click to viw</a>
                       }
-                      
-                    } */}
-                     
-                    
-                    <Link className="card-footer" href={portfolio.deploy}>Deploy </Link>  
+                                       
+                    </Card.Text>
+                  
                 </Card.Body>       
             </Card>       
           </Col>
