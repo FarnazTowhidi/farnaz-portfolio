@@ -12,10 +12,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color:#e6e6e6;
-  
-    will-change: transform;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-
+  will-change: transform;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 
 code {
@@ -24,7 +22,6 @@ code {
 }
 
 h3 {
-
   font-size: 15px;
   font-weight: bold;
 }
@@ -51,7 +48,6 @@ ul li::before {
 
 Row {
   margin: auto;
-
 }
 
 .color-gray {
@@ -66,9 +62,10 @@ Row {
   text-align: center;
 }
 
-.card-footer {
+.card-link {
   text-decoration: NONE;
-  font-size: 10px;
+  font-size: 15px;
+  color:#eb5c29;
 }
 
 .card-tech {
@@ -79,8 +76,8 @@ Row {
 
 .card-desc {
   font-size:14px;
- min-height: 70px;
-
+  min-height: 70px;
+  text-align: left;
 }
 
 .card-img {
@@ -106,6 +103,7 @@ Row {
   line-height: 33px;
   color:#ffffff;
   text-align: center;
+  margin-top: 30px;
 }
 
  .White {
@@ -129,7 +127,19 @@ Row {
   font-size: 40px;
   color:#ef7c02;
   text-align: center;
+  align-items: center;
+  padding:0px 0px 0px 0px;
+  margin:0px 0px 30px 0px;
+ }
 
+ .index-header-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.3em;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 30px;
+  color:#ef7c02;
+  text-align: center;
   align-items: center;
   padding:0px 0px 0px 0px;
   margin:0px 0px 30px 0px;
@@ -150,7 +160,7 @@ Row {
   font-family: 'Tajawal', sans-serif;
   font-size: 20px;
   color:#ffffff;
-  text-align: center;
+  text-align: left;
   max-height: 100%;
   line-height: 20px;
   align-self: center;
@@ -171,4 +181,16 @@ Row {
   height: 100px;
   border:1px solid #ef8c22;
   margin: 10px;
+}
+
+
+@media screen and (max-width: 576px) {
+  .idx-subheader-horiz {   
+    font-size: 17px;   
+   }
+
+  .font-Tajawal {
+    font-size: 30px;
+    
+  }
 }

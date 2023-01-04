@@ -26,6 +26,11 @@ function App() {
           path="/home" 
           element={<HomePage />} />
       </Routes>
+      <Routes>
+        <Route
+          path="/" 
+          element={<HomePage />} />
+      </Routes>
     </main>
   );
 }
