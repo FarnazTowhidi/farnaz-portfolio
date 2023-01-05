@@ -1,0 +1,231 @@
+
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  src: url(fonts/iransans-light.eot);
+  src: url(fonts/iransans-light.eot?#iefix) format('embedded-opentype'), 
+    url(fonts/iransans-light.woff2) format('woff2'), 
+    url(fonts/iransans-light.woff) format('woff'), 
+    url(fonts/iransans-light.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: bold;
+  src: url(fonts/iransans-bold.eot);
+  src: url(fonts/iransans-bold.eot?#iefix) format('embedded-opentype'), 
+    url(fonts/iransans-bold.woff2) format('woff2'), 
+    url(fonts/iransans-bold.woff) format('woff'), 
+    url(fonts/iransans-bold.ttf) format('truetype')
+}
+
+@media (min-width: 0px) {
+  .smallest-hide { display: none;}
+  .smallest-show { display: block;}
+  .smallest-text-center { text-align: center}
+   /*h2 { font-size:10px}*/
+   /*h3 { font-size: 11px !important}*/
+
+}
+
+@media (min-width: 400px) {
+  
+}
+
+@media (min-width: 600px) {
+ 
+}
+
+@media (min-width: 800px) {
+  .largest-show {display:block;text-align:center}
+  .largest-hide {display:none}
+  .largest-text-left {text-align:left}
+  .largest-text-center {text-align: center}
+}
+
+body {
+  font-family: 'IranianSansRegular';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  font-family: 'IranianSansRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size:13px
+}
+
+h2 {
+  font-family: 'IranianSansRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  padding-top:10px;
+  padding-bottom:10px
+}
+
+h3 {
+  font-family: 'IranianSansRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px; !important;
+  padding-top:10px;
+  font-weight:bold;
+}
+
+h5 {
+  font-size: 100%;
+}
+
+h6 {
+  text-align:right;
+}
+
+a{
+  text-decoration:none !important;
+}
+
+p {
+  text-align: justify;
+}
+
+.bold-text {
+  font-weight:bold;
+}
+
+.font-size-11 {
+  font-family: 'IranianSansRegular';
+  font-size: 11px;
+  line-height:15px;
+}
+
+.sw-background-navy {
+  background-color: #252b39;
+}
+
+.sw-background-light-gray {
+  background-color: #f2f2f3;
+}
+
+.sw-background-white {
+background-color:#ffffff;
+}
+
+.sw-text-dark-gray {
+  color: #393838;
+}
+
+a.sw-text-dark-gray:hover {
+  color: #f87244;
+}
+
+
+.sw-text-light-gray {
+  color: #A1A6B0;
+}
+a.sw-text-light-gray:hover {
+    color: #f87244;
+}
+
+
+.sw-language {
+  color: #848282;
+}
+a.sw-language:hover {
+  color: #f87244;
+}
+
+.sw-text-orange {
+  color: #f87244;
+}
+
+.sw-text-index-titles {
+  color: #6d6e71;
+}
+
+.index-news-title {
+  color: #f87244;
+  text-align: right;
+  font-size: 12px;
+}
+
+.index-news-description {
+  color: #393838;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.index-news-date {
+  color: #393838;
+  text-align: right;
+  font-size: 12px;
+  padding-top:10px
+
+}
+
+.index-news-picture {
+ float:right;
+ width:100%
+  }
+
+
+.index-news-col-left {
+  padding:0px;
+  /*padding-top:20px;*/
+ 
+  text-align:right
+ 
+}
+
+.index-news-col-right {
+  /*padding-top:20px;*/
+  /*padding-right:20px;*/
+  /*padding-left:20px;*/
+  padding-bottom:0px;
+}
+
+.megamenu-li {
+  position: static;
+  font-size: 0.9rem;
+}
+
+.megamenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  font-size: 1em;
+}
+
+.nav-item {
+  padding-right:20px;
+}
+
+.padding-top-bottom-20 {
+  padding-bottom:20px;
+  padding-top:20px;
+}
+
+.padding-bottom-3 {
+  padding-bottom: 3px;
+}
+
+.padding-0 {
+  padding:0px;
+}
+
+.padding-20 {
+ padding:20px;
+}
+
+.padding-bottom-20 {
+  padding-bottom:30px;
+}
+
+.sw-swallow-representetive {
+  font-size: 11px;
+}

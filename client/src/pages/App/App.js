@@ -5,12 +5,12 @@ import { Routes, Route} from "react-router-dom";
 //pages
 import PortfolioPage from '../PortfolioPage/PortfolioPage';
 import HomePage from "../HomePage/HomePage";
-import ResumePage from "../ResumePage/ResumePage"
 import NavBar from '../../components/NavBar/NavBar';
 //Stlyesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import '../../scss/custom.scss';
+
 
 function App() {
   return (
@@ -26,6 +26,11 @@ function App() {
           path="/home" 
           element={<HomePage />} />
       </Routes>
+      {/* <Routes>
+        <Route
+          path="/swallow" 
+          element={<SwallowPage />} />
+      </Routes> */}
       <Routes>
         <Route
           path="/" 

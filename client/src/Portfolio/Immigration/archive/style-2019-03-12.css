@@ -1,0 +1,154 @@
+
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  src: url(fonts/iransans-light.eot);
+  src: url(fonts/iransans-light.eot?#iefix) format('embedded-opentype'), 
+    url(fonts/iransans-light.woff2) format('woff2'), 
+    url(fonts/iransans-light.woff) format('woff'), 
+    url(fonts/iransans-light.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: bold;
+  src: url(fonts/iransans-bold.eot);
+  src: url(fonts/iransans-bold.eot?#iefix) format('embedded-opentype'), 
+    url(fonts/iransans-bold.woff2) format('woff2'), 
+    url(fonts/iransans-bold.woff) format('woff'), 
+    url(fonts/iransans-bold.ttf) format('truetype')
+}
+
+html {
+  font-family: 'iransans';
+  font-weight: normal;
+  font-size: 90%;
+  line-height: 100px;
+}
+
+body {
+  background-color: #ffffff;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 110%;
+}
+
+h2 {
+  font-size:110%;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 100%;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 100%;
+}
+a{
+  text-decoration:none !important;
+}
+
+p {
+  text-align: justify;
+}
+
+.bold-text {
+  font-weight:bold;
+}
+
+
+.sw-background-navy {
+  background-color: #252b39;
+}
+
+
+.text-dark-gray-sw {
+  color: #393838;
+}
+
+/*.text-light-gray, .nav-item, .navbar-nav a, .list-unstyled a {
+  color: #afafa9 !important;
+}
+
+.text-main-pages, #index-container-left a, #index-container-right {
+  color: #1d1d1d !important;
+  /*font-family: Arial, sans-serif, 'Montserrat Subrayada', Helvetica;*/
+}
+
+.footer-copyright {
+  color: #8b99a0;
+}
+
+.footer-men-item {
+  color: #949597;
+}
+
+/*  Index navigation */
+
+.navbar-nav li {
+  padding-right:25px
+}
+
+.border-grid-left {
+  border-left: 1px solid #e9e6e6;
+  border-top: 1px solid #e9e6e6;
+}
+
+.border-grid-right {
+  border-left: 1px solid #e9e6e6;
+  border-right: 1px solid #e9e6e6;
+  border-top: 1px solid #e9e6e6;
+}
+
+.sponsor-image-border {
+  padding: 5px;
+  border: 1px solid #efedeb;
+  border-radius: 10px;
+}
+
+.hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #efedeb;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.mega-menu {
+  padding: 30px !important;
+  width: 600px;
+  border-radius: 0;
+  margin-top: 0px;
+}
+
+  .mega-menu li {
+    display: inline-block;
+    font-size: 0.94rem;
+    padding: 3px 0px;
+    font-size: 0.9em;
+  }
+
+    .mega-menu li.mega-menu-column {
+      margin-right: 20px;
+      width: 150px;
+    }
+
+  .mega-menu .nav-header {
+    padding: 0 !important;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .mega-menu img {
+    padding-bottom: 10px;
+  }*/
+
+

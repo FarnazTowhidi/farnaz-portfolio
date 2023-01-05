@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-import { Link } from "react-router-dom";
 //Data
 import {portfolios} from "../../data.js"
 
@@ -40,12 +39,12 @@ export default function PortfolioPage() {
                  
                 <Card.Body style={{borderRadius:"0", padding:"10px 0px 30px 0px"  }}>
                     <Card.Title className="card-title">
-                      {portfolio.title}
+                      {portfolio.title}&nbsp;
                       {
                       (portfolio.sourceCode!="") 
                         ? <>
                             <a target="_blank" href={portfolio.sourceCode} ><img style={{width:"30px"}} src="/images/icon-git.png" /></a>
-                            <a target="_blank" href={portfolio.deploy} ><img style={{width:"30px"}} src="/images/icon-deploy.png" /></a>
+                            {/* <a target="_blank" href={portfolio.deploy} ><img style={{width:"30px"}} src="/images/icon-deploy.png" /></a> */}
                           </>
                         : <a href={portfolio.url} ><img style={{width:"30px"}} src="./images/icon-deploy.png" /></a>
                       }  

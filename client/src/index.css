@@ -50,8 +50,8 @@ Row {
   margin: auto;
 }
 
-.color-gray {
-  color:rgb(104, 104, 104);
+.color-orange {
+  color:#f3774a
 }
 
 .card-title {
@@ -136,6 +136,7 @@ Row {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   letter-spacing: 0.3em;
+  line-height: 30px;
   font-family: 'Tajawal', sans-serif;
   font-size: 30px;
   color:#ef7c02;
@@ -190,7 +191,14 @@ Row {
    }
 
   .font-Tajawal {
-    font-size: 30px;
-    
+    font-size: 30px; 
+  }
+
+  .NavBar_icons {
+    width:30px;
+   }
+
+   .card-title {  
+    font-size: 17px;   
   }
 }
