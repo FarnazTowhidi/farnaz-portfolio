@@ -3,8 +3,9 @@
 //react toolkit
 import { Routes, Route} from "react-router-dom";
 //pages
-import PortfolioPage from '../PortfolioPage/PortfolioPage';
 import HomePage from "../HomePage/HomePage";
+import PortfolioPage from '../PortfolioPage/PortfolioPage';
+import CheatSheetPage from "../CheatSheetPage/CheatSheetPage";
 import NavBar from '../../components/NavBar/NavBar';
 //Stlyesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,11 +27,12 @@ function App() {
           path="/home" 
           element={<HomePage />} />
       </Routes>
-      {/* <Routes>
+      
+      <Routes>
         <Route
-          path="/swallow" 
-          element={<SwallowPage />} />
-      </Routes> */}
+          path="/cheatsheet"
+          element={<CheatSheetPage />}  />
+      </Routes>
       <Routes>
         <Route
           path="/" 

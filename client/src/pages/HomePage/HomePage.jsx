@@ -56,7 +56,7 @@ export default function HomePage() {
       <section id="skills">
         <Row>
           <Col xl={1} lg={1} md={1} xs={1} className='index-header-vertical'>TECHNICAL SKILLS</Col>
-          <Col xl={1} lg={1} md={1} xs={1} className="d-sm-block"></Col>
+          <Col xl={1} lg={1} md={1} xs={1} className="d-sm-block "></Col>
           <Col xl={10} lg={10} md={10} xs={10}>
             <Container fluid>
               <Row>
@@ -82,7 +82,7 @@ export default function HomePage() {
                 </Col>
               </Row> 
               <Row>
-                <Col lg={2} xs={2} className="idx-subheader-horiz">METHODOLOGIES<br /> </Col>   
+                <Col lg={2} xs={2} className="idx-subheader-horiz">METHODOLOGY<br /> </Col>   
                 <Col>
                   <ul className="ul-skills">
                     <li> REST APIs, Deploy Heroku, Git, GitHub, Agile Scrum</li>
@@ -175,7 +175,7 @@ export default function HomePage() {
           <Col xl={10} lg={10} md={10} xs={10}>
               <Container fluid>            
                 <Row lg={12}>
-                  <Col lg={2} md={3} xs={3} className="idx-subheader-horiz">CANADA<br /> TORRONTO</Col>     
+                  <Col lg={2} md={3} xs={3} className="idx-subheader-horiz">CANADA<br /> TORONTO</Col>     
                   <Col lg={10} md={9} xs={9}> 
                         <ul>
                           <li> GENERAL ASSEMBLY, Software Engineering Immersive, <span className="color-orange">(GPA: 3.98/4)</span></li>                                   

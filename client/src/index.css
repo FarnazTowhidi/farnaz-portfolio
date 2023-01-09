@@ -38,6 +38,16 @@ ul li::before {
   margin:1px;
 }
 
+.navbar-toggler-icon {
+  height:30px;
+  border:0px;
+}
+
+.navbar-toggler-icon:focus {
+ border:#ef8c22;
+  box-shadow: none;
+}
+
 .ul-skills li::before {
   /* https://www.toptal.com/designers/htmlarrows/symbols/ */
   list-style: none;
@@ -170,12 +180,16 @@ Row {
  .NavBar_icons {
   transition: all 1s ease-in-out;
   margin: auto;
-  width:40px;
+  width:30px;
  }
 
  .NavBar_icons:hover {
   transform: rotate(20deg);
  }
+
+ .Navbar-brand-image {
+  width:50px
+}
 
  #rectangle {
   width: 30%;
@@ -184,10 +198,10 @@ Row {
   margin: 10px;
 }
 
-
-@media screen and (max-width: 576px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
   .idx-subheader-horiz {   
-    font-size: 17px;   
+    font-size: 15px;  
    }
 
   .font-Tajawal {
@@ -195,10 +209,33 @@ Row {
   }
 
   .NavBar_icons {
-    width:30px;
+    width:25px;
    }
 
    .card-title {  
     font-size: 17px;   
   }
+
+  .Navbar-brand-image {
+    width:40px
+  }
+
+  .navbar-toggler-icon {
+    height:20px;
+    border:0px;
+  }
 }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+  .NavBar_icons {
+    width:30px;
+   }
+}
+
