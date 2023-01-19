@@ -31,7 +31,7 @@ export default function NavBar() {
         </Col>  
         <Col xl={6} lg={6} md={6} xs={6} style={{marginTop:"20px", textAlign:"right"}}>
         <a href="https://www.linkedin.com/in/farnaz-towhidi-12979665/"><img className="NavBar_icons" src="/images/icon-linkedin.png" /></a>&nbsp;
-        <a href="mailto:farnaz.towhidi@gmail.com"><img className="NavBar_icons" src="/images/icon-gmail.png" /></a>&nbsp;
+        <a href="mailto:farnaz.towhidi@gmail.com"><img className="NavBar_icons" src="/images/icon-gmail.png" title="farnaz.towhidi@gmail.com" /></a>&nbsp;
         <a href="https://github.com/FarnazTowhidi"><img className="NavBar_icons" src="/images/icon-github.png" /></a>&nbsp;
         </Col>    
       </Row>

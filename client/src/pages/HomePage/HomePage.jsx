@@ -56,8 +56,8 @@ export default function HomePage() {
       <section id="skills">
         <Row>
           <Col xl={1} lg={1} md={1} xs={1} className='index-header-vertical'>TECHNICAL SKILLS</Col>
-          {/* <Col xl={1} lg={1} md={1} xs={1} className="d-sm-block "></Col> */}
-          <Col xl={11} lg={11} md={11} xs={11}>
+          <Col xl={1} lg={1} md={1} xs={1} className="d-sm-block "></Col>
+          <Col xl={10} lg={10} md={10} xs={10}>
             <Container fluid>
               <Row>
                 <Col lg={2} xs={2} className="idx-subheader-horiz">LANGUAGE<br /> FRAMEWORKS <br /> LIBRARIES</Col>   
