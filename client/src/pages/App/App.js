@@ -6,6 +6,7 @@ import { Routes, Route} from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import PortfolioPage from '../PortfolioPage/PortfolioPage';
 import CheatSheetPage from "../CheatSheetPage/CheatSheetPage";
+import CheatSheetReactPage from "./CheatSheetReactPage/CheatSheetReactPage";
 import NavBar from '../../components/NavBar/NavBar';
 //Stlyesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -33,6 +34,13 @@ function App() {
           path="/cheatsheet"
           element={<CheatSheetPage />}  />
       </Routes>
+
+      <Routes>
+        <Route
+          path="/cheatsheetreact"
+          element={<CheatSheetReactPage />}  />
+      </Routes>
+
       <Routes>
         <Route
           path="/" 

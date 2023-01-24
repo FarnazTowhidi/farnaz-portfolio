@@ -1,9 +1,7 @@
-import React, { useState,useEffect }  from 'react'
+import React, { useEffect }  from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Carousel from 'react-bootstrap/Carousel';
 
 
 export default function HomePage() {
@@ -21,7 +19,7 @@ export default function HomePage() {
         </Row>
         <Row lg={12} xs={12}>
           <Col xl={12} lg={12} md={12} xs={12} style={{textAlign:"center"}} >
-            <img src="/images/FarnazTowhidi.jpg" />
+            <img alt="farnaz towhidi" src="/images/FarnazTowhidi.jpg" />
           </Col> 
         </Row> 
         <Row>

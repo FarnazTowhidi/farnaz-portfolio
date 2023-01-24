@@ -13,10 +13,6 @@ export default function PortfolioPage() {
   useEffect(() => {
     document.title = '{ } Farnaz Towhidi Portfolio';
   }, []);
-
-  function HandleMouseOut (e, value) {
-    alert (e)
-  }
   
   return ( 
     <Container>    
@@ -41,12 +37,12 @@ export default function PortfolioPage() {
                     <Card.Title className="card-title">
                       {portfolio.title}&nbsp;
                       {
-                      (portfolio.sourceCode!="") 
+                      (portfolio.sourceCode!=="") 
                         ? <>
-                            <a target="_blank" href={portfolio.sourceCode} ><img style={{width:"30px"}} src="/images/icon-git.png" /></a>
+                            <a target="_blank" rel="noreferrer" href={portfolio.sourceCode} ><img alt="icon git" style={{width:"30px"}} src="/images/icon-git.png" /></a>
                             {/* <a target="_blank" href={portfolio.deploy} ><img style={{width:"30px"}} src="/images/icon-deploy.png" /></a> */}
                           </>
-                        : <a href={portfolio.url} ><img style={{width:"30px"}} src="./images/icon-deploy.png" /></a>
+                        : <a href={portfolio.url} ><img style={{width:"30px"}} alt="git deploy" src="./images/icon-deploy.png" /></a>
                       }  
                     </Card.Title>
                     <Card.Text className="card-desc" border="gray-dark" style={{ borderRadius:"0", height:"40px"}}>

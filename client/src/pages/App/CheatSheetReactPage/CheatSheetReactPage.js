@@ -1,69 +1,16 @@
-import React from 'react'
 import { CopyBlock, github } from "react-code-blocks";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
-export default function CheatSheetPage() {
+export default function CheatSheetReactPage() {
     const str = "Farnaz Towhidi"
 
-  return (
-    <Container style={{backgroundColor:" #f5f5f5", color:"black"}}>  
+    return (
+        <Container style={{backgroundColor:" #f5f5f5", color:"black"}}>  
         <Row>
             <Col className="portfolio-header" style={{color:"black"}}>CHEAT SHEET</Col>
         </Row>
-
-        <section id="terminal" style={{marginBottom:"30px"}}>
-            <Row>
-                <Col>
-                    <h4>TERMINAL</h4>
-                    List hidden files: ls -a <br />
-                    Move file:  mv ~/Downloads/MyFile.txt ~/Documents/Work/MyFile.txt
-                </Col>
-            </Row>
-        </section>
-
-        <section id="extensions">
-            <h4>EXTENSION</h4>  <br />
-            Code Runner<br />
-            Live Server <br />
-            Materieal Icon Theme <br/>
-            auto rename Tag <br />
-            ES7+react/Redux/React<br />
-        </section>
-
-        <section id="git" style={{marginBottom:"30px"}}>
-            <Row>
-                <Col>
-                    <h4>GIT</h4>  <br />
-                    git add .  <br />
-                    git commit -m "initial" <br />
-                    git push <br />
-                    git remote -v <br />
-                    git pull upstream main <br />
-                    
-                </Col>
-            </Row>
-        </section>
-        
-        <section id="node" style={{marginBottom:"30px"}}>
-            <Row>
-                <Col>
-                    <h4>Node.js</h4><br /> 
-                    Is a runtime environment for executing JavaScript out of browser. Run By typing node in the terminal. Then start to add any javascript function, like the the js files.  <br />
-                
-                </Col>
-            </Row>
-        </section>
-
-
-        <section id="mongoose" >
-            npm i mongoose <br />
-
-            
-
-        </section>
 
         <section id="react" style={{marginBottom:"30px"}}>
             <Row>
@@ -118,23 +65,23 @@ export default function CheatSheetPage() {
                         text={` 
                         export default function App() {
                             const [formData, setFormData] = useState({
-                              name: "",
-                              emotion: "😁"
+                            name: "",
+                            emotion: "😁"
                             });
-                          
+                        
                             function handleChange(evt) {
-                              const newFormData = { ...formData, [evt.target.name]: evt.target.value };
-                              setFormData(newFormData);
+                            const newFormData = { ...formData, [evt.target.name]: evt.target.value };
+                            setFormData(newFormData);
                             }
-                           
+                        
                         `}
                         codeBlock
                         theme={github}
                         showLineNumbers={false}
                     />
 
-                     Two methods for using setTodos, the first is passing the new value, the second is passing the new value, combine with previous one.                 
-                   
+                    Two methods for using setTodos, the first is passing the new value, the second is passing the new value, combine with previous one.                 
+                
                     <CopyBlock
                         language="jsx"
                         text={`function handleTodo(e) {setTodos((todos)=>[ ...todos, newTodo])}`}
@@ -142,9 +89,9 @@ export default function CheatSheetPage() {
                         theme={github}
                         showLineNumbers={false}
                     />
-                   
-                   <span className="card-title">REACT /CSS</span><br />
- 
+                
+                <span className="card-title">REACT /CSS</span><br />
+
                 </Col>
             </Row>
         </section>
@@ -167,6 +114,5 @@ export default function CheatSheetPage() {
             </Row>
         </section>
     </Container>
-
-  )
+    )
 }
