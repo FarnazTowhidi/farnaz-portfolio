@@ -35,6 +35,6 @@ export default function NavBar() {
         <a href="https://github.com/FarnazTowhidi"><img className="NavBar_icons" alt="farnaz towhidi github" src="/images/icon-github.png" /></a>&nbsp;
         </Col>    
       </Row>
-   </Container> 
+    </Container> 
   )
 }
