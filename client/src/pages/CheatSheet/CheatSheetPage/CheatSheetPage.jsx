@@ -10,7 +10,7 @@ export default function CheatSheetPage() {
   return (
     <>
      <NavBarCheatsheet />
-     <Container fluid className='body-cheatsheet'>
+     {/* <Container fluid className='body-cheatsheet'>
         <Row>
             <Col className="portfolio-header" style={{color:"black"}}>CHEAT SHEET</Col>
         </Row>
@@ -35,7 +35,7 @@ export default function CheatSheetPage() {
         <Row>
             <Col xl={12}> <Link to="/tools" >Tools</Link></Col>           
         </Row>
-    </Container>
+    </Container> */}
     </>  
   )
 }

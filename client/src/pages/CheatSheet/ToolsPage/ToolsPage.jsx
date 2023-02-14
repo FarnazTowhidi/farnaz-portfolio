@@ -14,11 +14,29 @@ export default function ToolsPage() {
         </Row>
         <Row>
           <Col>
-          <h5>imgur.com</h5>
-          
+            <h5>Screen shot</h5>
+            shift-cmd-3<br/>
+            shift-cmd-4 <br />
+            <h5>imgur.com</h5> 
+            <h5>Shortcuts</h5>
+            Boiler plate for HTML file: ! + tab <br />
+            Boiler plate for React Functional  RFC    
+
+            <section id="extensions">
+              <h5>Visual Studio Extension</h5>
+              Code Runner<br />
+              Live Server <br />
+              Materieal Icon Theme <br/>
+              auto rename Tag <br />
+              ES7+react/Redux/React<br />
+          </section>  
+
+          <section id="naming-conventions">
+              <h5>Naming Conventions</h5>
+              Showing Data: index
+          </section>   
           </Col>
-        </Row>
-        
+        </Row>      
       </Container>
     </>   
   )

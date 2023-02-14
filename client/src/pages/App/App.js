@@ -7,12 +7,18 @@ import { Routes, Route} from "react-router-dom";
 import HomePage from "../HomePage/HomePage";
 import PortfolioPage from '../PortfolioPage/PortfolioPage';
 import CheatSheetPage from "../CheatSheet/CheatSheetPage/CheatSheetPage";
+
 import GitPage from "../CheatSheet/GitPage/GitPage";
-import ReactPage from "../CheatSheet/ReactPage/ReactPage";
 import InstallfestPage from "../CheatSheet/InstallfestPage/InstallfestPage";
 import BashPage from "../CheatSheet/BashPage/BashPage";
 import VisualstudioPage from "../CheatSheet/VisualstudioPage/VisualstudioPage";
 import ToolsPage from "../CheatSheet/ToolsPage/ToolsPage";
+
+import MongoPage from "../CheatSheet/MongoPage/MongoPage";
+import ExpressPage from "../CheatSheet/ExpressPage/ExpressPage";
+import ReactPage from "../CheatSheet/ReactPage/ReactPage";
+import DeployPage from "../CheatSheet/DeployPage/DeployPage";
+import FrameworkPage from "../CheatSheet/FrameworkPage/FrameworkPage";
 import NavBar from '../../components/NavBar/NavBar';
 //Stlyesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -56,8 +62,32 @@ function App() {
 
       <Routes>
         <Route
+          path="/mongo"
+          element={<MongoPage />}  />
+      </Routes>
+
+      <Routes>
+        <Route
+          path="/express"
+          element={<ExpressPage />}  />
+      </Routes>
+
+      <Routes>
+        <Route
           path="/react"
           element={<ReactPage />}  />
+      </Routes>
+
+      <Routes>
+        <Route
+          path="/node"
+          element={<ReactPage />}  />
+      </Routes>
+          
+      <Routes>
+        <Route
+          path="/deploy"
+          element={<DeployPage />}  />
       </Routes>
 
       <Routes>
@@ -82,6 +112,12 @@ function App() {
         <Route
           path="/tools" 
           element={<ToolsPage />} />
+      </Routes>
+
+      <Routes>
+        <Route
+          path="/framework" 
+          element={<FrameworkPage />} />
       </Routes>
       
     </main>

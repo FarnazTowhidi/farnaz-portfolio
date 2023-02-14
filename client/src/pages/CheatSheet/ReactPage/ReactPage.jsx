@@ -9,26 +9,36 @@ export default function ReactPage() {
 
     return (
         <>
-            <NavBarCheatsheet />
+           <NavBarCheatsheet />
             <Container fluid className="body-cheatsheet">  
                 <Row>
                     <Col className="portfolio-header" style={{color:"black"}}>REACT</Col>
                 </Row>
-
                 <section id="react">
                     <Row>
-                        <Col>
-                            <h4>INSTALL </h4>
-                            npx create-react-app app-name <br />
-                            npx clear-npx-cashe <br />
-                            npm install react-syntax-highlighter --save <br />
-                            npm i react-code-blocks<br />
-                            npm i dotenv< br/>
-                            npm i mongoose <br />
-                            npm run build <br/>
-                            <span className="fw-bold">Install React Router</span>: npm i react-router-dom<br />
-                            
-                            Tools: React developer tools <br />
+                        <Col>                         
+                            Tools: React developer tools <br />                          
+                            <h4>import</h4>
+                            import 'bootstrap/dist/css/bootstrap.min.css';  
+
+                            <h4>Router</h4>
+                            <CopyBlock
+                                language="jsx"
+                                text={` 
+                                import { BrowserRouter as Router } from "react-router-dom";
+                                root.render(
+                                    <React.StrictMode>
+                                      <Router> 
+                                        <App />
+                                      </Router> 
+                                    </React.StrictMode>
+                                  );
+                                `}
+                                codeBlock
+                                theme={github}
+                                showLineNumbers={false}
+                            />
+
                             <h4>Template Literal</h4>
                             <CopyBlock
                                 language="javascript"
@@ -84,8 +94,7 @@ export default function ReactPage() {
     showLineNumbers={false}
 />
 
-                            Two methods for using setTodos, the first is passing the new value, the second is passing the new value, combine with previous one.                 
-                        
+                            Two methods for using setTodos, the first is passing the new value, the second is passing the new value, combine with previous one.                                        
                             <CopyBlock
                                 language="jsx"
                                 text={`function handleTodo(e) {setTodos((todos)=>[ ...todos, newTodo])}`}
@@ -93,30 +102,9 @@ export default function ReactPage() {
                                 theme={github}
                                 showLineNumbers={false}
                             />
-                        
-                        <span className="card-title">REACT /CSS</span><br />
-
                         </Col>
                     </Row>
-                </section>
-
-                <section id="mern-stack" style={{marginBottom:"30px"}}>
-            <Row>
-                    <Col>
-                        <span className="card-title">BUILDING MERN INFRASTRUCTURE </span><br />
-                        <h4>1- Generate the React app</h4>
-                        npx create-react-app mern-infrastructure
-                        <h4>2- Build the React app's production code</h4>
-                        npm run build
-                        <h4>3- Code the skeleton Express app</h4>
-                        npm i express morgan serve-favicon<br/>
-                        Create and Code the Express App (server.js): touch server.js
-                        <h4>4- Define the "catch all" route in the Express backend</h4>
-                        <h4>5- Test the Express server</h4>
-                        nodemon server
-                    </Col>
-                </Row>
-            </section>
+                </section>           
             </Container>
         </>   
     )

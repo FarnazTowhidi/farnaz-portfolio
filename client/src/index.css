@@ -16,7 +16,7 @@ body {
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 .body-cheatsheet {
-  background-color: white;
+  background-color: #f0f0f0;
   color:black;
 }
 
@@ -34,14 +34,14 @@ h4 {
   font-size: 18px;
   font-weight: bold;
   margin-top: 15px;
-  color:black
+
 }
 
 h5 {
   font-size: 16px;
   font-weight: bold;
-  color:black;
-  margin-top: 15px;
+  color:rgb(247, 149, 2);
+  margin-top: 45px;
 }
 
 ul {

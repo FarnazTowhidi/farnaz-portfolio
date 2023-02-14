@@ -9,21 +9,35 @@ export default function BashPage() {
     <>
       <NavBarCheatsheet />
       <Container fluid className='body-cheatsheet'>
-      <Row>
+        <Row>
             <Col className="portfolio-header" style={{color:"black"}}>BASH</Col>
         </Row>
         <section id="terminal">
           <Row>
               <Col>
-                  <h4>BASH</h4>
-                  List hidden files: ls -a <br />
-                  Move file:  mv ~/Downloads/MyFile.txt ~/Documents/Work/MyFile.txt
+                  home directory: ~ <br />
+                  root directory: / <br />
+                  current directory: . <br />
+                  root directory: .. <br />
+                  pwd <br />
+
+                  <h5>Listing directory:</h5>
+                  ls -a <br />
+                  <h5>Create directory:</h5>
+                  mkdir directoryname
+                  <h5>Create File:</h5>
+                  touch file1.ext file2.ext
+                  <h5> Move file</h5>
+                   mv ~/Downloads/MyFile.txt ~/Documents/Work/MyFile.txt
+                   <h5>Delete Directory</h5>
+                  rm -rf directoryName<br />
+                  <h5>Delete file</h5>
+                  rm filename
+                  
               </Col>
           </Row>
         </section>
     </Container>
-    </>
-    
-    
+    </>  
   )
 }

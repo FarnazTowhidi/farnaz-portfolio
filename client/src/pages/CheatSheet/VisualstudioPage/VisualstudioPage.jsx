@@ -13,7 +13,7 @@ export default function VisualstudioPage() {
               <Col className="portfolio-header" style={{color:"black"}}>VISUAL STUDIO</Col>
           </Row>
           <section id="extensions">
-              <h4>EXTENSION</h4>  <br />
+              <h5>EXTENSION</h5>
               Code Runner<br />
               Live Server <br />
               Materieal Icon Theme <br/>
