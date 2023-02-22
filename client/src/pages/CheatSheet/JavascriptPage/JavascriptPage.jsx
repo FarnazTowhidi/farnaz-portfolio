@@ -1,13 +1,15 @@
 import React from 'react'
 import {CopyBlock, github} from "react-code-blocks";
-import {Container, Row, Column} from "react-bootstrap"
+import {Container, Row, Col} from "react-bootstrap"
 
 export default function JavascriptPage() {
   return (
    <>
-    <Container>
+    <Container fluid>
         <Row>
-            <Column>
+            <Col> 
+                number to string: num.toString(123) <br />
+                string to number: Number("123")
                 <h5>Reverse String</h5>
                 <CopyBlock
                     language="jsx"
@@ -15,12 +17,16 @@ export default function JavascriptPage() {
 function ReverseString (str) {
     return str.split("").reverse().join("");
 }
+
+forEach((element) => { /* … */ })
+forEach((element, index) => { /* … */ })
+
                     `}
                     codeBlock
                     theme={github}
                     showLineNumbers={false}
                 />  
-            </Column>
+            </Col>
         </Row>
     </Container>
    </>

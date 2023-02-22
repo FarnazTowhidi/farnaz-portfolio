@@ -1,7 +1,7 @@
 import React from 'react'
 import {Container,Row, Col} from 'react-bootstrap'
 import { CopyBlock, github } from "react-code-blocks";
-import NavBarCheatsheet from '../../components/NavBarCheatsheet/NavBarCheatsheet'
+import NavBarCheatsheet from '../../../components/NavBarCheatsheet/NavBarCheatsheet'
 
 export default function EjsPage() {
   return (

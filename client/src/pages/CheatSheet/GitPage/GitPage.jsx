@@ -12,10 +12,9 @@ export default function GitPage() {
         <Container fluid className='body-cheatsheet'>  
             <Row>
                 <Col className="portfolio-header" style={{color:"black"}}>GIT</Col>
-            </Row>
-        
-            
-            
+                git remote -v <br />
+                git remote add origin https://github.com/aerlikh17/track-fit-app.git <br /> 
+            </Row>           
         </Container>
     </>
     

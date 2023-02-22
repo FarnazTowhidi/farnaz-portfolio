@@ -30,14 +30,20 @@ export default function InstallfestPage() {
           curl -o- https://raw.githubusercontent.com/creationix/nvm/vVERSION NUMBER GOES HERE/install.sh | bash
           
           <h5>MONGO</h5>
-
+          npm i mongoose <br />
           <a href="https://expressjs.com/en/5x/api.html"><h5>EXPRESS</h5></a>
           npm i express morgan serve-favicon   <br />                    
           npm i mongoose <br />
           npm i dotenv< br/>
           npm i ejs <br />
           touch .env <br />
-          Create folder config, file database.js
+          Create folder config, file database.js<br />
+          npm i method-override <br />
+
+          <h5>Create Express App</h5>
+          express -e projectName  (e for ejs files)
+          <h5>Install node modules</h5>
+          npm i
           
           <h5>NODE</h5>
           <span className="fw-bold">Create package.json:</span> npm init <br />

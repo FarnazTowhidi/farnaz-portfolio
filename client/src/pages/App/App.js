@@ -11,7 +11,6 @@ import CheatSheetPage from "../CheatSheet/CheatSheetPage/CheatSheetPage";
 import GitPage from "../CheatSheet/GitPage/GitPage";
 import InstallfestPage from "../CheatSheet/InstallfestPage/InstallfestPage";
 import BashPage from "../CheatSheet/BashPage/BashPage";
-import VisualstudioPage from "../CheatSheet/VisualstudioPage/VisualstudioPage";
 import ToolsPage from "../CheatSheet/ToolsPage/ToolsPage";
 
 import MongoPage from "../CheatSheet/MongoPage/MongoPage";
@@ -19,6 +18,9 @@ import ExpressPage from "../CheatSheet/ExpressPage/ExpressPage";
 import ReactPage from "../CheatSheet/ReactPage/ReactPage";
 import DeployPage from "../CheatSheet/DeployPage/DeployPage";
 import FrameworkPage from "../CheatSheet/FrameworkPage/FrameworkPage";
+import JSMVCPage from "../CheatSheet/JSMVCPage/JSMVCPage";
+import JavascriptPage from "../CheatSheet/JavascriptPage/JavascriptPage";
+
 import NavBar from '../../components/NavBar/NavBar';
 //Stlyesheets
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -98,12 +100,6 @@ function App() {
 
       <Routes>
         <Route
-          path="/visualstudio"
-          element={<VisualstudioPage />}  />
-      </Routes>
-
-      <Routes>
-        <Route
           path="/Installfest" 
           element={<InstallfestPage />} />
       </Routes>
@@ -119,7 +115,21 @@ function App() {
           path="/framework" 
           element={<FrameworkPage />} />
       </Routes>
+
+      <Routes>
+        <Route
+          path="/js" 
+          element={<JSMVCPage />} />
+      </Routes>
       
+      <Routes>
+        <Route
+          path="/javascript" 
+          element={<JavascriptPage />} />
+      </Routes>
+      
+
+
     </main>
   );
 }

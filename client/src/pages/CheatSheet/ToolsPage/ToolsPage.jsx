@@ -25,16 +25,28 @@ export default function ToolsPage() {
             <section id="extensions">
               <h5>Visual Studio Extension</h5>
               Code Runner<br />
+              Prettier code formatter <br />
               Live Server <br />
               Materieal Icon Theme <br/>
               auto rename Tag <br />
               ES7+react/Redux/React<br />
+              MongoDB for VS Code <br />
+              formatter <br />
           </section>  
 
           <section id="naming-conventions">
               <h5>Naming Conventions</h5>
-              Showing Data: index
-          </section>   
+              Showing Data: index<br />
+              Every thing broural except model name.
+              <a href="https://gist.github.com/jim-clark/17908763db7bd3c403e6">Restful naming conventions</a>
+          </section>  
+
+          <section id="embeded-javascript">
+              <h5>Embede Java Script (.EJS)</h5>
+              <h5>Extension to Java Script (.JSX)</h5>
+             
+          </section>  
+          <a href="https://www.lucidchart.com/pages/er-diagrams?a=0  ">lucidchart</a><br />
           </Col>
         </Row>      
       </Container>

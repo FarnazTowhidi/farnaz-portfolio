@@ -16,7 +16,8 @@ export default function ReactPage() {
                 </Row>
                 <section id="react">
                     <Row>
-                        <Col>                         
+                        <Col>  
+                            import "./ChatBox.css"; <br />                       
                             Tools: React developer tools <br />                          
                             <h4>import</h4>
                             import 'bootstrap/dist/css/bootstrap.min.css';  

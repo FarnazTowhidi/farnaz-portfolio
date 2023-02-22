@@ -22,12 +22,6 @@ export default function NavBarCheatsheet() {
             <Nav className="me-auto">           
                 <Link to="/git" className="nav-link" >Git</Link>         
             </Nav> 
-            <Nav className="me-auto">           
-                <Link to="/visualstudio" className="nav-link" >Visual Studio</Link>         
-            </Nav> 
-            <Nav className="me-auto">
-            <Link to="/framework" className="nav-link" >FrameWork</Link>  
-            </Nav> 
 
 
             <NavDropdown title="Languages" id="basic-nav-dropdown">
@@ -35,24 +29,24 @@ export default function NavBarCheatsheet() {
                 <NavDropdown.Item href="/javascript">Javascript</NavDropdown.Item>
                 <NavDropdown.Item href="/react">React</NavDropdown.Item>
                 <NavDropdown.Item href="/express">Python</NavDropdown.Item>      
-                <NavDropdown.Item href="/java">Java</NavDropdown.Item>                 
+                <NavDropdown.Item href="/java">Java</NavDropdown.Item>   
+                <NavDropdown.Item href="/js">js MVC</NavDropdown.Item>                
             </NavDropdown> &nbsp;&nbsp;&nbsp;
 
             <NavDropdown title="Framework" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/framework">Framework</NavDropdown.Item>  
                 <NavDropdown.Item href="/">Django</NavDropdown.Item>  
                 <NavDropdown.Item href="/express">Express.js</NavDropdown.Item>
                 <NavDropdown.Item href="/express">Angular</NavDropdown.Item>   
                 <NavDropdown.Item href="/express">Vue.js</NavDropdown.Item>                  
             </NavDropdown> &nbsp;&nbsp;&nbsp;
 
-            
-
             <NavDropdown title="Database" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/mongo">Mongo</NavDropdown.Item>       
+                <NavDropdown.Item href="/mongo">Mongo</NavDropdown.Item> 
+                <NavDropdown.Item href="/mongo">Mysql</NavDropdown.Item> 
+                <NavDropdown.Item href="/mongo">Postgre Sql</NavDropdown.Item>       
             </NavDropdown> 
-            
-             
-      
+                
             <Nav className="me-auto">           
                 <Link to="/node" className="nav-link" >Node</Link>    
             </Nav>  
