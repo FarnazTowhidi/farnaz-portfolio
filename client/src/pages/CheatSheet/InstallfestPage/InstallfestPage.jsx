@@ -62,7 +62,7 @@ export default function InstallfestPage() {
           npm install react-syntax-highlighter --save <br />
           npm i react-code-blocks<br />
           <span className="fw-bold">Install React Bootstrap</span>: npm i react-bootstrap <br/>
-          <span className="fw-bold">Install React Router</span>: npm i react-router-dom<br />
+          <span className="fw-bold">Install React Router 6</span>: npm i react-router-dom<br />
           npm install axios <br />
           <span className="fw-bold">Build: </span>npm run build <br/>
           <span className="fw-bold">Run: </span> npm start

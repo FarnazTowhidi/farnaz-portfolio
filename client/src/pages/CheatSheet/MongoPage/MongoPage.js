@@ -32,9 +32,12 @@ export default function MongoPage() {
                           required: true,
                         }
                       },
+                      name: String, 
                       releaseYear: Nmber,
-                      
-
+                      nowShowing: Boolean,
+                      movieDate: Date, 
+                      cast: [String],
+                      field1: mongoose.Schema.ObjectId,
                       {
                         timestamps: true,
                       }
@@ -46,25 +49,26 @@ export default function MongoPage() {
                   showLineNumbers={false}
                 />
 
-                help <br />
-                show dbs <br />
-                use databaseName <br />
-                show collections <br />
-                db.collectionName.find() <br />
-                db.collectionName.find().pretty  <br /> 
-                db.collectionName.insertOne({}) <br/>
-                db.collectionName.deleteMany()  
                 <h5>CRUD Collection</h5>
                 <CopyBlock  
                   text={` 
-db.people.insert({
-  ... name: "Fred",   
-  ... age: 21         
-  }) 
-     
-db.collectionName.drop()  
-
-db.collectionName.deleteOne()                         
+                  help 
+                  show dbs 
+                  use databaseName 
+                  show collections 
+                  db.collectionName.find()
+                  db.collectionName.find().pretty  
+                  db.collectionName.insertOne({}) 
+                  
+                  db.people.insert({
+                    ... name: "Fred",   
+                    ... age: 21         
+                    }) 
+                      
+                  
+                  db.collectionName.deleteOne()   
+                  db.collectionName.deleteMany()    
+                  db.collectionName.drop()                   
                     `} 
                   codeBlock
                   theme={github}

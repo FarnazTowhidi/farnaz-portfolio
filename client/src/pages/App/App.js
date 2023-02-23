@@ -33,103 +33,23 @@ function App() {
     <main className="App">
       <NavBar />
       <Routes>
-        <Route
-          path="/" 
-          element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />   
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/cheatsheet" element={<CheatSheetPage />}  />    
+        <Route path="/bash" element={<BashPage />}  />
+        <Route path="/mongo" element={<MongoPage />}  />
+        <Route path="/express" element={<ExpressPage />}  />
+        <Route path="/react" element={<ReactPage />}  />
+        <Route path="/node" element={<ReactPage />}  />
+        <Route path="/deploy" element={<DeployPage />}  />
+        <Route path="/git" element={<GitPage />}  />
+        <Route path="/Installfest" element={<InstallfestPage />} />
+        <Route path="/tools" element={<ToolsPage />} />
+        <Route path="/framework" element={<FrameworkPage />} />
+        <Route path="/js" element={<JSMVCPage />} />
+        <Route path="/javascript" element={<JavascriptPage />} />
       </Routes>
-
-      <Routes>
-        <Route
-          path="/portfolio" 
-          element={<PortfolioPage />} />
-      </Routes>   
-
-      <Routes>
-        <Route
-          path="/home" 
-          element={<HomePage />} />
-      </Routes>
-      
-      <Routes>
-        <Route
-          path="/cheatsheet"
-          element={<CheatSheetPage />}  />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/bash"
-          element={<BashPage />}  />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/mongo"
-          element={<MongoPage />}  />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/express"
-          element={<ExpressPage />}  />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/react"
-          element={<ReactPage />}  />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/node"
-          element={<ReactPage />}  />
-      </Routes>
-          
-      <Routes>
-        <Route
-          path="/deploy"
-          element={<DeployPage />}  />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/git"
-          element={<GitPage />}  />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/Installfest" 
-          element={<InstallfestPage />} />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/tools" 
-          element={<ToolsPage />} />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/framework" 
-          element={<FrameworkPage />} />
-      </Routes>
-
-      <Routes>
-        <Route
-          path="/js" 
-          element={<JSMVCPage />} />
-      </Routes>
-      
-      <Routes>
-        <Route
-          path="/javascript" 
-          element={<JavascriptPage />} />
-      </Routes>
-      
-
-
     </main>
   );
 }

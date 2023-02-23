@@ -1,2 +1,2 @@
 # Run Instruction
-Brose to client -> npm start
+Browse to client -> npm start

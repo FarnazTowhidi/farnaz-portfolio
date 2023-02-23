@@ -10,16 +10,17 @@ export default function JavascriptPage() {
             <Col> 
                 number to string: num.toString(123) <br />
                 string to number: Number("123")
+                Math.floor(divideResult / 2)
                 <h5>Reverse String</h5>
                 <CopyBlock
                     language="jsx"
                     text={` 
-function ReverseString (str) {
-    return str.split("").reverse().join("");
-}
+                    function ReverseString (str) {
+                        return str.split("").reverse().join("");
+                    }
 
-forEach((element) => { /* … */ })
-forEach((element, index) => { /* … */ })
+                    forEach((element) => { /* … */ })
+                    forEach((element, index) => { /* … */ })
 
                     `}
                     codeBlock

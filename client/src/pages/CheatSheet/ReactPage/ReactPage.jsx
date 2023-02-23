@@ -26,6 +26,7 @@ export default function ReactPage() {
                             <CopyBlock
                                 language="jsx"
                                 text={` 
+                                index.js
                                 import { BrowserRouter as Router } from "react-router-dom";
                                 root.render(
                                     <React.StrictMode>
@@ -34,6 +35,17 @@ export default function ReactPage() {
                                       </Router> 
                                     </React.StrictMode>
                                   );
+                                  
+                                  App.js
+                                  import { Routes, Route} from "react-router-dom";
+                                  <Routes>
+                                    <Route path="/" element={<HomePage />} />   
+                                    <Route path="/portfolio" element={<PortfolioPage />} />
+                                    <Route path="/portfolio/*" element={<PortfolioPage />} /> (define another route in other pages)
+                                  </Routes>
+
+                                  pages.js
+                                  <button onClick={()=> navigate('/product')}> Click here </button>
                                 `}
                                 codeBlock
                                 theme={github}
@@ -58,47 +70,57 @@ export default function ReactPage() {
                                 showLineNumbers={false}
                             />
                             
-<h4>React Form</h4>
-<CopyBlock
-    language="jsx"
-    text={` 
-    function handleAddTodo (e) {
-        e.preventDefault();
-        setTodos ((todos)=> [...todos, newTodo]);
-    }
-    <form onSubmit={handleAddTodo}>
-    </form>
-    `}
-    codeBlock
-    theme={github}
-    showLineNumbers={false}
-/>
+                            <h4>React Form</h4>
+                            <CopyBlock
+                                language="jsx"
+                                text={` 
+                                function handleAddTodo (e) {
+                                    e.preventDefault();
+                                    setTodos ((todos)=> [...todos, newTodo]);
+                                }
+                                <form onSubmit={handleAddTodo}>
+                                </form>
+                                `}
+                                codeBlock
+                                theme={github}
+                                showLineNumbers={false}
+                            />
                             
                             <h4>Form State variable</h4>
-<CopyBlock
-    language="jsx"
-    text={` 
-    export default function App() {
-        const [formData, setFormData] = useState({
-        name: "",
-        emotion: "😁"
-        });
-    
-        function handleChange(evt) {
-        const newFormData = { ...formData, [evt.target.name]: evt.target.value };
-        setFormData(newFormData);
-        }
-    
-    `}
-    codeBlock
-    theme={github}
-    showLineNumbers={false}
-/>
+                            <CopyBlock
+                                language="jsx"
+                                text={` 
+                                export default function App() {
+                                    const [formData, setFormData] = useState({
+                                    name: "",
+                                    emotion: "😁"
+                                    });
+                                
+                                    function handleChange(evt) {
+                                    const newFormData = { ...formData, [evt.target.name]: evt.target.value };
+                                    setFormData(newFormData);
+                                    }
+                                
+                                `}
+                                codeBlock
+                                theme={github}
+                                showLineNumbers={false}
+                            />
 
                             Two methods for using setTodos, the first is passing the new value, the second is passing the new value, combine with previous one.                                        
                             <CopyBlock
                                 language="jsx"
                                 text={`function handleTodo(e) {setTodos((todos)=>[ ...todos, newTodo])}`}
+                                codeBlock
+                                theme={github}
+                                showLineNumbers={false}
+                            />
+
+                            <CopyBlock
+                                language="jsx"
+                                text={`
+                                
+                                `}
                                 codeBlock
                                 theme={github}
                                 showLineNumbers={false}
