@@ -37,6 +37,7 @@ export default function MongoPage() {
                       nowShowing: Boolean,
                       movieDate: Date, 
                       cast: [String],
+                      rating: {type: Number, min: 1, max: 5, default: 5},
                       field1: mongoose.Schema.ObjectId,
                       {
                         timestamps: true,

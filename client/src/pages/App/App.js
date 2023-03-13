@@ -12,7 +12,7 @@ import GitPage from "../CheatSheet/GitPage/GitPage";
 import InstallfestPage from "../CheatSheet/InstallfestPage/InstallfestPage";
 import BashPage from "../CheatSheet/BashPage/BashPage";
 import ToolsPage from "../CheatSheet/ToolsPage/ToolsPage";
-
+import HtmlPage from "../CheatSheet/HtmlPage/HtmlPage";
 import MongoPage from "../CheatSheet/MongoPage/MongoPage";
 import ExpressPage from "../CheatSheet/ExpressPage/ExpressPage";
 import ReactPage from "../CheatSheet/ReactPage/ReactPage";
@@ -49,6 +49,7 @@ function App() {
         <Route path="/framework" element={<FrameworkPage />} />
         <Route path="/js" element={<JSMVCPage />} />
         <Route path="/javascript" element={<JavascriptPage />} />
+        <Route path="/html" element={<HtmlPage />} />
       </Routes>
     </main>
   );

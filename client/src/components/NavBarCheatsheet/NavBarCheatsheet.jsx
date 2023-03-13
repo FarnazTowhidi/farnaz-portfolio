@@ -25,10 +25,10 @@ export default function NavBarCheatsheet() {
 
 
             <NavDropdown title="Languages" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/">HTML/CSS</NavDropdown.Item>  
+                <NavDropdown.Item href="/html">HTML/CSS</NavDropdown.Item>  
                 <NavDropdown.Item href="/javascript">Javascript</NavDropdown.Item>
                 <NavDropdown.Item href="/react">React</NavDropdown.Item>
-                <NavDropdown.Item href="/express">Python</NavDropdown.Item>      
+                <NavDropdown.Item href="/python">Python</NavDropdown.Item>      
                 <NavDropdown.Item href="/java">Java</NavDropdown.Item>   
                 <NavDropdown.Item href="/js">js MVC</NavDropdown.Item>                
             </NavDropdown> &nbsp;&nbsp;&nbsp;
